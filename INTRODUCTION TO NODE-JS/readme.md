@@ -16,7 +16,7 @@
 
   - Yes Node-JS operates on event driven architecture means it can handle asynchronous operation.
 
- ### 3. Whats is Async I/O ?
+ ### 3. What is Async I/O ?
  - `Node-JS` can handle `asynchronous` operation. `Async I/0` also known as `Non-Blocking I/O`
 
  - In other words it can perform `input/output` tasks `without blocking` other operations.
@@ -39,7 +39,7 @@
 
  - In other words before `Node -JS`, the `Apache` `HTTP` Server was widely used but had `blocking I/O`, meaning it could handle fewer concurrent requests.
 
- - Th primary advantage of `Non-Blocking` is it can handle multiple requests with lesser number of `threads`.
+ - The primary advantage of `Non-Blocking` is it can handle multiple requests with lesser number of `threads`.
 
  ### 6. What is `NPM` ?
 
@@ -48,7 +48,7 @@
  
  - `NPM` is basically a resistor or a central place where we can add new packages and packages can be of anything example if we want to handle time,date,images etc there are separate packages for it.
 
- -  `NPM` was developed by `Joyent` in 2010 initially available for `Moc-OS` and `Linux`.
+ -  `NPM` was developed by `Joyent` in 2010 initially available for `Mac-OS` and `Linux`.
 
  - In `2011` `Windows` support came up and it was led by `Joyent` and `Microsoft`, then windows support for `Node-JS` was build.
 
