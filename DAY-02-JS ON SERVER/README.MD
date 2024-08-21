@@ -13,7 +13,7 @@
 - In other words it is one CPU  or a machine which is receiving the requests and processes these requests.
 
 
-### Relation of Java Script ans `Server` 
+### Relation of Java Script and `Server` 
 
 - Initially Java Script was the only language which was used inside the browser but after `Node-JS` we can run Java Script on the server.
 
@@ -48,7 +48,7 @@
 - All JS engine must follow ECMA Script.
 
 
-### Does `Node JS` has V* `embedded` on it ?
+### Does `Node JS` has V8 `embedded` on it ?
 
 - Yes, `Node.JS` has the `V8` JavaScript engine embedded within it. 
 
@@ -65,9 +65,9 @@
 
 - `Node-JS` as a C++ program it has `V8` embedded in it and along with that there are more super powers which it gives and when it runs on the server makes it very powerful.
 
-### What ar these super powers of Node-JS ?
+### What are these super powers of Node-JS ?
 
-- This can be explained by example , suppose if we have a data base  installed and if we want to connect to the data base through Java Script or let us take another example if we want to make `HTTP` call then these super powers comes inform of `api` and that is the core thing that `Node-JS` adds onto V*.
+- This can be explained by example , suppose if we have a data base  installed and if we want to connect to the data base through Java Script or let us take another example if we want to make `HTTP` call then these super powers comes inform of `api` and that is the core thing that `Node-JS` adds onto V8.
 
 - `Node-JS` with these super powers on top of V8 and this si known as Java Script runtime.
 
