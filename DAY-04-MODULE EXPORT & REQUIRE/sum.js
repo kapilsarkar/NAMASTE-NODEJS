@@ -17,7 +17,7 @@ function calculateTripleSum(a, b, c) {
   const sum = a + b + c;
   console.log(sum);
 }
-console.log(module.exports)
+ccccccccc
 module.exports = {
   x,
   y,
