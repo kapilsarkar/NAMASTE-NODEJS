@@ -110,11 +110,11 @@ Output :
 Hello Sum
 ```
 
-- So now we can export multiple things by wrapping it inside an object.We are doing it by destructuring.
+- So now we can export multiple things by wrapping it inside an object.
 
-### CommonJS Module or CJS :
+### CommonJS Module :
 
-- The above pattern of require and export is known as CommonJS Module or CJS.
+- The above pattern of require and export is known as CommonJS Module.
 
 - CommonJS is a module system used in Node.js, allowing you to structure and share code. In CommonJS, each file is treated as a module.
 
