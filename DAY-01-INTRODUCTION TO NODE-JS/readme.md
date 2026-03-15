@@ -1,73 +1,179 @@
-### INTRODUCTION TO NODE JS
+# Node.js Notes
 
-### 1. What is `Node-JS` ?
+## Episode 01 — Introduction to Node.js
 
-  - `Node JS` is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+---
 
-  -  In other words `Node -JS` is built on top of "Chrome V8 Java Script Engine" which is known for high     performance and efficient execution of JS Code 
+# 1. What is Node.js?
 
-  - `Node JS`  is cross platform means it can run on windows,linux and also on other platforms.
+* **Node.js** is a **JavaScript runtime environment** built on **Google Chrome's V8 JavaScript Engine**.
 
-  - `Node JS` is Open source and it is maintained by Open JS Foundation.
+* It allows developers to **run JavaScript outside the web browser**, primarily on the **server side**.
 
-  - `Node JS` executes Java Script outside the web browser.
+* Node.js is designed to build **scalable network applications**.
 
- ### 2. Is `Node JS` is related to `Event driven architecture` ?
+### Key Features
 
-  - Yes Node-JS operates on event driven architecture means it can handle asynchronous operation.
+* Built on **Chrome's V8 JavaScript Engine**
+* **Cross-platform** (runs on Windows, Linux, macOS)
+* **Open-source**
+* Maintained by the **OpenJS Foundation**
+* Allows JavaScript to run on the **server**
 
- ### 3. What is Async I/O ?
- - `Node-JS` can handle `asynchronous` operation. `Async I/0` also known as `Non-Blocking I/O`
+---
 
- - In other words it can perform `input/output` tasks `without blocking` other operations.
+# 2. Is Node.js related to Event-Driven Architecture?
 
- ### 4. History of `Node -JS` ?
+Yes.
 
- - `Node-JS` was developed ny `Ryan Dahl` in 2009.
+Node.js follows an **event-driven architecture**.
 
- - `Node-JS` runs Java script code and to run Java script code we need a `Javascript-Engine` whether it's in a browser like Chrome  or a server Environment or in other words wherever there is Java Script there is a  `JavScript-Engine`.
+This means Node.js applications respond to **events** such as:
 
- - Initially `Ryan Dahl`  worked with `Spider Monkey` which itself is a Java script Engine but switched in 2 days to the V8 Engine to Google Chrome due to it's performance. Now V8 engine powers Node-JS.
+* HTTP requests
+* File system operations
+* Database responses
+* Network communication
 
- - Initially while developing `Node-JS` by `Ryan Dahl` and named it as `Web JS` for building Web Server but later after realizing it's potential and named `Node-JS`.
+Instead of waiting for operations to finish, Node.js continues executing other tasks and processes the result once the event completes.
 
- - `Ryan Dahl` developed `Node-JS` independently but a company named `Joyent` shown interested in `Node-JS`.
+---
 
- ### 5. `Node-JS`  vs `Apache HTTP` Server ?
+# 3. What is Async I/O?
 
- - Initially `Apache` was used to create `HTTP` server and it's a `blocking` server and `Ryan Dahl` wanted to build a non-blocking server.
+**Async I/O** stands for **Asynchronous Input/Output**.
 
- - In other words before `Node -JS`, the `Apache` `HTTP` Server was widely used but had `blocking I/O`, meaning it could handle fewer concurrent requests.
+In Node.js, I/O operations such as:
 
- - The primary advantage of `Non-Blocking` is it can handle multiple requests with lesser number of `threads`.
+* Reading files
+* Database queries
+* API requests
+* Network operations
 
- ### 6. What is `NPM` ?
+are performed **asynchronously**.
 
- - `NPM` is a package manager for `Node-JS` it came in `2010`.
+### Non-Blocking I/O
 
- 
- - `NPM` is basically a resistor or a central place where we can add new packages and packages can be of anything example if we want to handle time,date,images etc there are separate packages for it.
+Node.js uses **Non-Blocking I/O**, meaning it does not stop the execution of other tasks while waiting for an operation to complete.
 
- -  `NPM` was developed by `Joyent` in 2010 initially available for `Mac-OS` and `Linux`.
+Example:
 
- - In `2011` `Windows` support came up and it was led by `Joyent` and `Microsoft`, then windows support for `Node-JS` was build.
+If Node.js is waiting for a database response, it can continue handling **other incoming requests** instead of blocking the server.
 
- - In `2012`, `Ryan Dahl` stepped down from managing `Node.JS`, and `Isaac Z. Schlueter`, creator `NPM`, took over. 
+This makes Node.js very efficient for handling **multiple concurrent requests**.
 
- ### 7. How `Node-JS` was forked and merged ?
+---
 
- - In `2014`, a developer named `Fedor Indutny` forked `Node.JS`, creating `IO.JS`, due to disagreements within the community.
+# 4. History of Node.js
 
- - `IO.JS` and `Node-JS` merged back together in `2015` and they maintained `Node-JS`.
+* **Node.js** was created by **Ryan Dahl** in **2009**.
 
- - In `2019` two major communities, the `JS-Foundation` and `Node-JS` foundation `merged` to form the `Open-JS Foundation`.
+* To execute JavaScript, a **JavaScript Engine** is required.
 
- ### In `2024` `Node-JS` continues to be widely used.
+Examples of JavaScript engines:
 
- 
+* **V8 Engine** → Used in Google Chrome
+* **SpiderMonkey** → Used in Mozilla Firefox
 
+Initially, Ryan Dahl experimented with **SpiderMonkey**, but within a short time he switched to **Google's V8 Engine** due to its **high performance**.
 
+V8 compiles JavaScript directly into **machine code**, making execution very fast.
 
+Originally, Ryan Dahl named the project **Web.js** because he wanted to build **web servers using JavaScript**. Later the name was changed to **Node.js**.
 
-  
+During its early development, a company called **Joyent** supported the Node.js project.
 
+---
+
+# 5. Node.js vs Apache HTTP Server
+
+Before Node.js became popular, **Apache HTTP Server** was widely used to handle web requests.
+
+### Apache Server
+
+* Uses a **thread-per-request architecture**
+* Each request is handled by a **separate thread**
+* Can become resource-heavy when handling many requests simultaneously
+
+### Node.js Server
+
+* Uses **event-driven architecture**
+* Uses **non-blocking I/O**
+* Can handle **thousands of concurrent requests with fewer resources**
+
+This makes Node.js particularly suitable for **highly scalable applications**.
+
+---
+
+# 6. What is NPM?
+
+**NPM** stands for **Node Package Manager**.
+
+It was introduced in **2010** and is the **default package manager for Node.js**.
+
+NPM has two main parts:
+
+### 1. NPM Registry
+
+A large **online repository of open-source JavaScript packages**.
+
+Developers can download packages for various tasks such as:
+
+* Working with dates
+* File uploads
+* Authentication
+* Database handling
+* Image processing
+
+### 2. NPM CLI
+
+A **command line tool** used to install and manage packages.
+
+Example:
+
+npm install express
+
+This command installs the **Express.js framework**.
+
+---
+
+# 7. How Node.js Was Forked and Merged
+
+In **2014**, a developer named **Fedor Indutny** created a fork of Node.js called **io.js** due to disagreements within the community regarding development governance.
+
+The io.js project aimed to move development faster.
+
+In **2015**, the **Node.js** and **io.js** communities decided to merge back together to unify development.
+
+---
+
+# 8. Formation of the OpenJS Foundation
+
+In **2019**, two major JavaScript organizations merged:
+
+* **Node.js Foundation**
+* **JS Foundation**
+
+They combined to form the **OpenJS Foundation**, which now governs and maintains Node.js and other JavaScript projects.
+
+---
+
+# Node.js Today
+
+Node.js continues to be one of the **most popular technologies for backend development**.
+
+It is widely used for:
+
+* REST APIs
+* Real-time applications
+* Microservices
+* Streaming platforms
+* Full-stack JavaScript applications (MERN / MEAN)
+
+---
+
+# Summary
+
+Node.js is a powerful **JavaScript runtime environment** that allows developers to build **fast and scalable server-side applications** using JavaScript.
+
+Its **event-driven architecture** and **non-blocking I/O model** make it ideal for handling **large numbers of concurrent connections efficiently**.
